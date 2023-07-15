@@ -1,0 +1,139 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    background-color: #f1f1f1;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    /* margin: 0 auto; */
+    max-width: 100%;
+    /* padding: 0 20px; */
+}
+
+.container .row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#ToDoForm{
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
+    margin: 10% auto 15% auto;
+    width: 30%;
+    padding: 20px;
+}
+
+#ToDoForm .ToDoInput{
+    border: none;
+    border-bottom: 1px solid #000;
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 100%;
+}
+
+#ToDoForm .ToDoInput:focus{
+    outline: none;
+}
+
+#ToDoForm .ToDoInput::placeholder{
+    color: #999;
+}
+
+#ToDoForm .submit_button{
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 10px;
+    width: 100%;
+}
+
+#ToDoForm .submit_button:hover, #ToDoForm .submit_button:focus{
+    background-color: #43A047;
+}
+
+#ToDoForm .submit_button:active{
+    background-color: #3E9142;
+}
+
+
+.ToDoList{
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
+    margin: 10% auto 15% auto;
+    width: 30%;
+    padding: 20px;
+}
+
+.ToDoList .ToDoItem{
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+}
+
+.ToDoList .ToDoItem:last-child{
+    border-bottom: none;
+}
+
+.ToDoList .ToDoItem .ToDoText{
+    display: inline-block;
+    width: 90%;
+}
+
+.ToDoList .ToDoItem .ToDoDelete{
+    background-color: #f44336;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 18px;
+    padding: 5px;
+    text-align: center;
+    width: 5%;
+}
+
+
+.CompletedList{
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
+    margin: 10% auto 15% auto;
+    width: 30%;
+    padding: 20px;
+}
+
+.CompletedList .CompletedItem{
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+}
+
+.CompletedList .CompletedItem:last-child{
+    border-bottom: none;
+}
+
+.CompletedList .CompletedItem .CompletedText{
+    display: inline-block;
+    width: 90%;
+}
+
+.CompletedList .CompletedItem .CompletedDelete{
+    background-color: #f44336;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 18px;
+    padding: 5px;
+    text-align: center;
+    width: 5%;
+}
